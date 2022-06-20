@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'aquaticpd-v2';
+  g:string = ""
+  openPager(openPage:string){
+    this.g= openPage
+  }
 }

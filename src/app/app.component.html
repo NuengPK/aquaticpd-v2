@@ -1,0 +1,13 @@
+<div class="container">
+ <app-header (g)="openPager($event)"></app-header>
+  <div class="row">
+    <div class="col-md-12">
+      <app-aquatic-food *ngIf="g==='Aquatic Food'"></app-aquatic-food>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <app-distribution-list *ngIf="g==='Distribution'"></app-distribution-list>
+    </div>
+  </div>
+</div>
