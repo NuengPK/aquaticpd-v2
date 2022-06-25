@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { AquaticFood } from 'src/app/share-module/aquatic-food.module';
+import { AquaticFoodService } from 'src/app/share-service/aquatic-food.service';
 
 @Component({
   selector: 'app-aquatic-food-item',
@@ -6,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./aquatic-food-item.component.css']
 })
 export class AquaticFoodItemComponent implements OnInit {
-
-  constructor() { }
-
+  @Input() item!:AquaticFood;
+  constructor(private aquaticFoodService:AquaticFoodService) { }
+  openDetail(){
+    this.aquaticFoodService.dataDeteil.emit(this.item)
+  }
   ngOnInit(): void {
   }
 

@@ -1,1 +1,13 @@
-<p>aquatic-food-list works!</p>
+<div class="row">
+  <div class="col-4">
+    <button type="button" class="btn btn-success">New Aquatic</button>
+  </div>
+</div>
+<div class="row">
+  <ul class="list-group">
+    <app-aquatic-food-item
+      *ngFor="let checkItems of aquaticFoods"
+      [item]="checkItems"
+    ></app-aquatic-food-item>
+  </ul>
+</div>

@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DistributionListComponent implements OnInit {
 
+  pb = [{a:'A',b:1},{a:'B',b:2},{a:'C',b:3}]
+
   constructor() { }
 
   ngOnInit(): void {

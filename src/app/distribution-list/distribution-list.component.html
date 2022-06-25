@@ -1,1 +1,11 @@
-<p>distribution-list works!</p>
+<div class="row">
+  <h2>Distribution List</h2>
+</div>
+<app-distribution-edit></app-distribution-edit>
+<div class="mt-1">
+  <div *ngFor="let bn of pb" class="row">
+    <div class="col">
+      <div class="p-2 col border border-dark">{{bn.a}}----- (-{{bn.b}}-)</div>
+    </div>
+  </div>
+</div>
